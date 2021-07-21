@@ -9,9 +9,10 @@ Contexto: Estar logado
 Cenário: Criar nova lista
     Dado que não possua uma lista de presentes
     Quando criar uma nova lista
-    E escolher o tipo de lista que deseja
-    E preencher os dados necessários 
-    Então será possível incluir os itens desejados
+    E indicar qual o tipo será escolhido
+    E preencher os dados necessários à nova lista
+    Então deverá ser possível incluir itens a lista criada
+
 
 
 

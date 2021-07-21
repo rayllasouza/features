@@ -12,13 +12,10 @@ Funcionalidade: Cadastro de Pessoa Física
 
 
     Esquema do Cenário: Cadastro inválido
-        Quando submeter as seguintes informações de cadastro:
-            |CPF      |nome      |DDD      |número      |
-            |<CPF_in> |<nome_in> |<DDD_in> |<número_in> |
+        Quando submeter CPF "<CPF>", nome "<nome>", DDD "<DDD>" e número "<número>"
         Então deverá retornar a mensagem "<msg>"
         Exemplos: 
-            
-            |CPF_in      |nome_in   |DDD_in |número_in |msg_out                              |
+            |CPF         |nome      |DDD    |número    |msg                                  |
             |            |ana maria |87     |999999999 |CPF é um campo obrigatório.          |
             |12345678912 |          |87     |999999999 |O campo nome é obrigatório.          |
             |12345678912 |ana maria |       |999999999 |DDD do celular é um campo obrigatório|

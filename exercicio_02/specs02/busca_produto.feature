@@ -2,17 +2,25 @@
 
 Funcionalidade: Busca de produto
 
+    Contexto: 
+        Dado que esteja na home 
 
-Cenário: busca de produto por input
-    Dado que esteja na home 
-    Quando pesquisar por "iPhone"
-    Então deverá retornar todos os produtos que tenham "iPhone" na descrição
+    Esquema do Cenário: busca de produto por input
+        Quando pesquisar pelo item "<item>"
+        Então deverá retornar todos os produtos que tenham "<item>" na descrição
+        Exemplos:
+            |item  |
+            |iPhone|
 
 
-Cenário: busca de produto por departamento
-    Dado que esteja na home 
-    Quando cliclar no departamento Automotivo
-    Então deverá retornar todos os produtos relacionados ao departamento selecionado
+    Esquema do Cenário: busca de produto por departamento 
+        Quando clicar no departamento "<departamento>"
+        Então deveráser exibido os produtos do departamento "<departamento>"
+        Exemplos: 
+            |departamento|
+            |automotivo  |
+
+
 
 
 
